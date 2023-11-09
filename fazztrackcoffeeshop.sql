@@ -186,3 +186,14 @@ insert into "productVariant" ("name","additionalPrice")
 values ('Hot',0),
 ('Ice',1000);
 
+
+insert into "tags" ("name")
+values ('Flash Sale');
+
+insert into "categories" ("name")
+values ('Food/Snack'),
+('Beverage');
+
+insert into "promo" ("name","code","description","percentage","isExpired","maximumPromo","minimumAmount")
+values ('FAZZFOOD50','FZFD50','Potongan sebesar 50% hingga maksimal 50000 untuk setiap produk minuman kopi dengan minimal pembelian sebesar 50000',0.5,false,50000,50000),
+('DITRAKTIR60','DTKR60','Potongan sebesar 60% hingga maksimal 30000 untuk setiap produk minuman kopi denga minimal pembelian sebesar 25000',0.6,false,30000,25000);
