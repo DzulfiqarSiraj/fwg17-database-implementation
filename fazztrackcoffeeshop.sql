@@ -177,5 +177,12 @@ values ('Espresso', 'Kopi hitam pekat dengan crema di atasnya', 25000, 'espresso
 ('Lungo', 'Kopi dengan volume air yang lebih banyak', 25000, 'lungo.jpg', 0, FALSE);
 
 
+insert into "productSize" ("size","additionalPrice")
+values ('small',0),
+('medium',3000),
+('large',4000);
 
+insert into "productVariant" ("name","additionalPrice")
+values ('Hot',0),
+('Ice',1000);
 
