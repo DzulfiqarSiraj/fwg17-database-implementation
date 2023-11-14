@@ -174,14 +174,16 @@ VALUES
 -- Read
 SELECT * FROM "users" WHERE "username" LIKE 'B%';
 
-('Lungo','Kopi dengan volume air yang lebih banyak',25000,'lungo.jpg',0,FALSE);
+
 -- Update
 ALTER TABLE "users" ADD COLUMN "age" INT;
 UPDATE "products" SET "price" = 24000 WHERE "name" = 'Lungo';
 
+
 -- Delete
 ALTER TABLE "users" DROP COLUMN "age";
 DELETE FROM "products" WHERE "name" = 'Lungo';
+
 
 -- Join
 SELECT "o"."orderNumber","u"."username", "p"."name","o"."quantity","o"."total"
